@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .signup-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+      }
+      .signup-container h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .signup-container input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .signup-container .name-fields {
+        display: flex;
+        justify-content: space-between;
+      }
+      .signup-container .name-fields input {
+        width: 48%;
+      }
+      .signup-container label {
+        margin: 10px 0;
+      }
+      .signup-container button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .signup-container .register-button {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .signup-container .sign-in-button {
+        background-color: #28a745;
+        color: #fff;
+      }
+      .signup-container .terms {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .signup-container .terms input {
+        margin-right: 10px;
+      }
+      .signup-container .terms a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .signup-container .terms a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="name-fields">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="lastname" placeholder="Last Name" required />
+        </div>
+        <input type="text" name="mobile" placeholder="Mobile No." required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <div class="password-fields">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            type="password"
+            name="confirm_password"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+
+        <div class="terms">
+          <input type="checkbox" name="agree" required />
+          <label for="agree">I Agree</label>
+        </div>
+        <p>
+          By clicking
+          <button type="submit" class="register-button">Register</button>, you
+          agree to the <a href="#">Terms and Conditions</a> set out by this
+          site, including our Cookie Use.
+        </p>
+        <button type="button" class="sign-in-button">Sign In</button>
+      </form>
+    </div>
+  </body>
+</html>
